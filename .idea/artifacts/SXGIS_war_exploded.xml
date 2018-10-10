@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SXGIS:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SXGIS_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SXGIS/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SXGIS" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
