@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Intro to MapView - Create a 2D map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
+    <link rel="stylesheet" href="../portal/css/main.css">
+
+    <script src="../portal/js/jquery.js"></script>
+    <script src="../portal/js/html2canvas.js"></script>
+    <script src="https://js.arcgis.com/4.9/"></script>
+
+    <script src="../portal/js/sxmain.js"></script>
+    <script src="../portal/js/screen.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <!--标题-->
+    <div class="header">
+
+    </div>
+
+    <!--侧栏菜单（左边）-->
+    <div class="sideBar">
+        <div id="switch">
+        </div>
+        <ul class="gisFunc">
+
+            <li class="gis"> <img class="icons" src="../portal/css/icon.png">信息查询
+                <ul class="tools">
+                    <li class="analyse">地图工具</li>
+                    <li class="analyse" id="lyr_c">图层控制</li>
+                </ul>
+            </li>
+            <li class="gis"> <img class="icons" src="../portal/css/icon.png">基础统计
+                <ul class="tools">
+                    <li class="analyse"><a target="_blank" href="../statistic/count-layer.html" >统计表输出</a></li>
+                    <li class="analyse"><a target="_blank" href="../poi/top5.html" >危险性评估</a></li>
+
+                </ul>
+            </li>
+
+            <li class="gis"> <img class="icons" src="../portal/css/icon.png">地理分析
+                <ul class="tools">
+                    <li class="analyse">核密度分析</li>
+                    <li class="analyse">影像变化</li>
+
+                </ul>
+            </li>
+            <li class="gis"> <img class="icons" src="../portal/css/icon.png">成果输出
+                <ul class="tools">
+                    <!--<li class="analyse" id="output">地图输出</li>-->
+                    <li class="analyse" id="screensave">图层保存</li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!--地图容器（加载底图）-->
+    <div id="viewDiv">
+
+    </div>
+</div>
+</body>
+</html>
